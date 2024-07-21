@@ -1,3 +1,4 @@
+// SignUp.js
 import { View, Text, ScrollView, Image } from 'react-native';
 import React, { useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -5,7 +6,8 @@ import CustomButton from '../../components/CustomButton';
 import { images } from '../../constants';
 import FormField from '../../components/FormField';
 import { Link, useRouter } from 'expo-router';
-import { firebase } from '../../config/firebase'; // Adjust the path according to your project structure
+import { auth } from '../../config/firebase'; // Adjust the path according to your project structure
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 const SignUp = () => {
   const [form, setForm] = useState({
@@ -20,7 +22,7 @@ const SignUp = () => {
     console.log('Submit button clicked');
     setIsSubmitting(true);
     try {
-      const userCredential = await firebase.auth().createUserWithEmailAndPassword(form.email, form.password);
+      const userCredential = await createUserWithEmailAndPassword(auth, form.email, form.password);
       console.log('User signed up successfully:', userCredential.user);
       router.push('/sign-in'); // Redirect to the sign-in page
     } catch (error) {
