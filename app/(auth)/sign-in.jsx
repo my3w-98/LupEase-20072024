@@ -5,7 +5,7 @@ import CustomButton from '../../components/CustomButton';
 import { images } from '../../constants';
 import FormField from '../../components/FormField';
 import { Link, useRouter } from 'expo-router';
-import { auth } from '../../config/firebase'; // Adjust the path according to your project structure
+import { auth } from '../../config/firebase'; 
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
 const SignIn = () => {
