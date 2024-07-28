@@ -87,7 +87,7 @@ const BloodTests = ({ navigation }) => {
   );
 
   return (
-    <SafeAreaView className="bg-primary flex-1">
+    <SafeAreaView className="bg-primarytabs flex-1">
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <FlatList
           data={[]}

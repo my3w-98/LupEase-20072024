@@ -114,7 +114,7 @@ const Medication = () => {
   );
 
   return (
-    <SafeAreaView className="bg-primary flex-1">
+    <SafeAreaView className="bg-primarytabs flex-1">
       <ScrollView contentContainerStyle={{ flexGrow: 1 }} className="px-4 py-6">
         <View className="bg-secondary rounded-lg p-6 mb-6">
           <Text className="text-2xl text-white font-psemibold">Add Medication</Text>

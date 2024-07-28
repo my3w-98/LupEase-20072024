@@ -38,7 +38,7 @@ const Symptoms = () => {
   };
 
   return (
-    <SafeAreaView className="bg-primary flex-1">
+    <SafeAreaView className="bg-primarytabs flex-1">
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <ScrollView contentContainerStyle={{ flexGrow: 1 }} className="px-4 py-6">
           <View className="bg-secondary rounded-lg p-6 mb-6">
@@ -67,17 +67,7 @@ const Symptoms = () => {
             <SymptomsEntry symptoms={symptoms} setSymptoms={setSymptoms} />
           </View>
 
-          <View className="bg-secondary rounded-lg p-6 mb-6">
-            <Text className="text-xl text-white font-psemibold">Blood Tests</Text>
-            <BloodTestEntry
-              bloodTestDone={bloodTestDone}
-              setBloodTestDone={setBloodTestDone}
-              testName={testName}
-              setTestName={setTestName}
-              markers={markers}
-              setMarkers={setMarkers}
-            />
-          </View>
+          
 
           <View className="bg-secondary rounded-lg p-6">
             <CustomButton

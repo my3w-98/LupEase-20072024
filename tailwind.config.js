@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         success: '#28a745',
         primary: "#161622",
+        primarytabs: "white",
         secondary: {
           DEFAULT: "#8C52FF",
           100: "#8C52F3",
