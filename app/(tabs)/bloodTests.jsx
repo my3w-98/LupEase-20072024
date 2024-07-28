@@ -36,8 +36,9 @@ const BloodTests = ({ navigation }) => {
   };
 
   const renderHeader = () => (
-    <>
-      <View className="bg-custom-color1  rounded-lg p-6 mb-6">
+    <SafeAreaView>
+      <>
+      <View className="bg-customColors-color1 rounded-lg p-6 mb-6">
         <Text className="text-2xl text-white font-psemibold">Record Blood Tests</Text>
         <View className="mt-6">
           <Text className="text-lg text-white font-pregular">Selected Date: {date.toLocaleDateString()}</Text>
@@ -58,7 +59,7 @@ const BloodTests = ({ navigation }) => {
         </View>
       </View>
 
-      <View className="bg-custom-color1  rounded-lg p-6 mb-6">
+      <View className="bg-customColors-color1  rounded-lg p-6 mb-6">
         <BloodTestEntry
           bloodTestDone={bloodTestDone}
           setBloodTestDone={setBloodTestDone}
@@ -68,12 +69,12 @@ const BloodTests = ({ navigation }) => {
           setMarkers={setMarkers}
         />
       </View>
-    </>
+    </></SafeAreaView>
   );
 
   const renderFooter = () => (
     <>
-      <View className="bg-custom-color1  rounded-lg p-6 mb-6">
+      <View className="bg-customColors-color1  rounded-lg p-6 mb-6">
         <Button
           title="Save"
           onPress={handleSave}
@@ -87,7 +88,7 @@ const BloodTests = ({ navigation }) => {
   );
 
   return (
-    <SafeAreaView className="bg-primarytabs flex-1">
+    <SafeAreaView className="bg-primary flex-1">
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <FlatList
           data={[]}

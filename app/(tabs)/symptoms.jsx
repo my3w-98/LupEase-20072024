@@ -41,7 +41,7 @@ const Symptoms = () => {
     <SafeAreaView className="bg-primarytabs flex-1">
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <ScrollView contentContainerStyle={{ flexGrow: 1 }} className="px-4 py-6">
-          <View className="bg-secondary rounded-lg p-6 mb-6">
+          <View className="bg-customColors-color1 rounded-lg p-6 mb-6">
             <Text className="text-2xl text-white font-psemibold">Record Symptoms</Text>
             <View className="mt-6">
               <Text className="text-lg text-white font-pregular">Select Date</Text>
@@ -62,14 +62,14 @@ const Symptoms = () => {
             </View>
           </View>
 
-          <View className="bg-secondary rounded-lg p-6 mb-6">
+          <View className="bg-customColors-color1 rounded-lg p-6 mb-6">
             <Text className="text-xl text-white font-psemibold">Symptoms</Text>
             <SymptomsEntry symptoms={symptoms} setSymptoms={setSymptoms} />
           </View>
 
           
 
-          <View className="bg-secondary rounded-lg p-6">
+          <View className="bg-customColors-color1 rounded-lg p-6">
             <CustomButton
               title="Save"
               handlePress={handleSave}

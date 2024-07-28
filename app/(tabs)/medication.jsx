@@ -102,7 +102,7 @@ const Medication = () => {
   };
 
   const renderMedication = ({ item }) => (
-    <View className="bg-secondary rounded-lg p-4 mb-4 flex-row justify-between items-center">
+    <View className="bg-customColors-color1 rounded-lg p-4 mb-4 flex-row justify-between items-center">
       <View>
         <Text className="text-lg text-white font-psemibold">{item.medication}</Text>
         <Text className="text-md text-white font-pregular">{`Dose: ${item.dose}`}</Text>
@@ -116,7 +116,7 @@ const Medication = () => {
   return (
     <SafeAreaView className="bg-primarytabs flex-1">
       <ScrollView contentContainerStyle={{ flexGrow: 1 }} className="px-4 py-6">
-        <View className="bg-secondary rounded-lg p-6 mb-6">
+        <View className="bg-customColors-color1 rounded-lg p-6 mb-6">
           <Text className="text-2xl text-white font-psemibold">Add Medication</Text>
           <View className="mt-6">
             <Text className="text-lg text-white font-pregular">Medication Name</Text>

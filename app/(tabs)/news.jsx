@@ -13,7 +13,7 @@ const News = () => {
   return (
     <SafeAreaView className="bg-primarytabs flex-1">
       <ScrollView contentContainerStyle={{ flexGrow: 1 }} className="px-4 py-6">
-        <View className="bg-secondary rounded-lg p-6">
+        <View className="bg-customColors-color1 rounded-lg p-6">
           <Text className="text-2xl text-white font-psemibold">News Updates</Text>
           <FlatList
             data={news}

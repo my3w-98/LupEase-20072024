@@ -20,6 +20,12 @@ module.exports = {
         gray: {
           100: "#CDCDE0",
         },
+        customColors:{
+          color1:"#5A639C",
+          color2:"#7776B3",
+          color3:"#9B86BD",
+          color4:"#E2BBE9"
+        },
       },
       fontFamily: {
         pthin: ["Poppins-Thin", "sans-serif"],
